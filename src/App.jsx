@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import './App.css'
-import Anasayfa from './Components/Anasayfa';
+import Images from './Components/Images';
+import Gezengenler from './Components/Gezengenler';
+
 
 
 
@@ -80,6 +83,26 @@ const yaziDegistir = () => {
 }
 
 
+//array destruacting
+
+const [baslık,setBaslık] = useState("Siteme hoşgeldin")
+
+const changeBaslık = () => {
+  const yeniBaslık = prompt("bişeyler yaz")
+
+    if(yeniBaslık === null)
+    return;
+
+    if(!yeniBaslık){
+      return alert("lütfen boş bırakma")
+    }
+
+
+  setBaslık(yeniBaslık)
+
+}
+
+
 
 let metin = "javascript güzel"
 let metin2 = "2.metinim"
@@ -141,9 +164,40 @@ aciklama = "amazon ilk logo"
 
 
 
+
+
+
+<hr />
+<hr />
+<br />
+
+<Images></Images>
+
+
+
+
+<h1>{baslık}</h1>
+<button onClick={changeBaslık} >Başlığı düzenle</button>
+
+
+
+
+
+<hr />
+<hr />
+<br /><br />
+
+
 <ul>
-  <Anasayfa isim="dünya"></Anasayfa>
+<Gezengenler adi="Dünya" info="evimiz"></Gezengenler>
+<Gezengenler adi="Mars" info="su var mi?"></Gezengenler>
 </ul>
+
+
+
+
+
+
 
 
 </>

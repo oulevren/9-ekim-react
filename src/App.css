@@ -21,3 +21,10 @@
   object-fit: contain;
   height: 250px;
 }
+
+.flex-container.active{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between
+
+}
