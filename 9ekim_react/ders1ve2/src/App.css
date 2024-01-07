@@ -1,0 +1,33 @@
+.kirmizi{
+  color: red;
+}
+
+.avatar-container{
+  width: 100%;
+}
+
+.flex-cont{
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-cont .buyer{
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.flex-cont div img{
+  width: 100%;
+  object-fit: contain;
+  height: 250px;
+}
+
+.flex-container.active{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.mavi{
+  color: orangered;
+}

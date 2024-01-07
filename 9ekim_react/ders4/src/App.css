@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  transition: 0.5s;
+  height: 100vh;
+}
+
+
+.container.active{
+  background-color: black;
+  color: white;
+}
+
+
+/* alterantif */
+/* #root{
+  transition: 0.5s;
+  height: 100vh;
+}
+
+
+#root.active{
+  background-color: black;
+  color: white;
+} */
+
+.item{
+  margin-left: 2rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+}
+
+.personels li{
+  width: 30%;
+}
+
+.personels .edit{
+  float: right;
+  cursor: pointer;
+  color: orangered;
+  font-family: sans-serif;
+}
+
+
+
